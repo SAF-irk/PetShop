@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Главная страница</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="d-flex align-items-center">
+                    <img src="image/logo.png" alt="PetShop Logo" class="img-fluid" style="max-height: 60px;">
+                    <span class="h4 ms-2">PetShop 🐾</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">☰</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <nav class="nav">
+                        <a class="nav-link active" href="index.html">Главная</a>
+                        <a class="nav-link" href="breeds.html">Породы</a>
+                        <a class="nav-link" href="reviews.html">Отзывы</a>
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Выберите своего питомца сегодня! 🐶😺</h1>
+            <p class="lead">Найдите идеального друга для вашей семьи</p>
+            <a href="#gallery" class="btn btn-light btn-lg">Посмотреть каталог</a>
+        </div>
+    </section>
+
+    <section class="gallery py-5" id="gallery">
+        <div class="container">
+            <h2 class="text-center mb-4">Популярные породы 🐾</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed1.jpg" class="card-img-top" alt="Лабрадор">
+                        <div class="card-body">
+                            <h5 class="card-title">Лабрадор 🐶</h5>
+                            <p class="card-text">Дружелюбный и энергичный питомец, идеальный для активных семей.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="labrador">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed2.jpg" class="card-img-top" alt="Мейн-кун">
+                        <div class="card-body">
+                            <h5 class="card-title">Мейн-кун 😺</h5>
+                            <p class="card-text">Крупная и ласковая кошка с дружелюбным характером.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="mainecoon">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed3.jpg" class="card-img-top" alt="Чихуахуа">
+                        <div class="card-body">
+                            <h5 class="card-title">Чихуахуа 🐕</h5>
+                            <p class="card-text">Маленький, но храбрый компаньон для жизни в квартире.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="chihuahua">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed6.jpg" class="card-img-top" alt="Сибирская хаски">
+                        <div class="card-body">
+                            <h5 class="card-title">Сибирская хаски ❄️</h5>
+                            <p class="card-text">Энергичная и выносливая собака с яркой внешностью.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="husky">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed5.jpg" class="card-img-top" alt="Британская кошка">
+                        <div class="card-body">
+                            <h5 class="card-title">Британская кошка 🐱</h5>
+                            <p class="card-text">Спокойная и плюшевая кошка с мягким характером.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="britishcat">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed4.jpg" class="card-img-top" alt="Йоркширский терьер">
+                        <div class="card-body">
+                            <h5 class="card-title">Йоркширский терьер 🐩</h5>
+                            <p class="card-text">Миниатюрный и элегантный питомец с ярким нравом.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="yorkshire">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed7.jpg" class="card-img-top" alt="Немецкая овчарка">
+                        <div class="card-body">
+                            <h5 class="card-title">Немецкая овчарка 🐶</h5>
+                            <p class="card-text">Смелая и умная собака, отличный защитник и компаньон.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="germanshepherd">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed8.jpg" class="card-img-top" alt="Доберман">
+                        <div class="card-body">
+                            <h5 class="card-title">Доберман 🐶</h5>
+                            <p class="card-text">Элегантная и преданная собака с сильным характером.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="doberman">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="card">
+                        <img src="image/breed9.jpg" class="card-img-top" alt="Бульдог">
+                        <div class="card-body">
+                            <h5 class="card-title">Бульдог 🐶</h5>
+                            <p class="card-text">Добродушный и спокойный питомец, идеален для дома.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#petModal" data-pet="bulldog">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="breeds.html" class="btn btn-primary btn-lg">Купить сейчас 🛒</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="petModal" tabindex="-1" aria-labelledby="petModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="petModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="pet-image" src="" alt="Питомец" class="img-fluid mb-3">
+                    <p id="pet-description"></p>
+                    <h6>Характеристики:</h6>
+                    <ul id="pet-characteristics"></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <a href="contacts.html" class="btn btn-primary">Связаться с нами 📞</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="reviews bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Отзывы наших клиентов ⭐</h2>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card">
+                        <span class="review-star">⭐</span>
+                        <div class="card-body">
+                            <p class="card-text">"Нашли нашего щенка здесь, и он стал частью семьи! Спасибо за отличный сервис! 🐶"</p>
+                            <h6 class="card-subtitle text-muted">Анна, Москва</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card">
+                        <span class="review-star">⭐</span>
+                        <div class="card-body">
+                            <p class="card-text">"Очень удобный сайт, быстро доставили котенка. Рекомендую! 😺"</p>
+                            <h6 class="card-subtitle text-muted">Игорь, Санкт-Петербург</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card">
+                        <span class="review-star">⭐</span>
+                        <div class="card-body">
+                            <p class="card-text">"Профессиональная команда, помогли выбрать питомца! 🐾"</p>
+                            <h6 class="card-subtitle text-muted">Елена, Екатеринбург</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Доставка и оплата 🚚</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <h4>Доставка 📦</h4>
+                    <p>Мы доставляем питомцев по всей России. Сроки доставки зависят от региона, обычно 1-3 дня.</p>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <h4>Оплата 💳</h4>
+                    <p>Принимаем оплату картой, через электронные кошельки или наличными при получении.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <h5>Контакты 📞</h5>
+                    <p>Телефон: +7 914 914 4570</p>
+                    <p>Email: info@petshop.ru</p>
+                    <p>Адрес: Улан-Баторская ул., 6, Иркутск 📍</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <h5>Мы в соцсетях 🌐</h5>
+                    <a href="#" class="text-white me-2">Facebook</a>
+                    <a href="#" class="text-white me-2">Instagram</a>
+                    <a href="#" class="text-white">VK</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const pets = {
+            labrador: {
+                title: "Лабрадор 🐶",
+                image: "image/breed1.jpg",
+                description: "Лабрадоры — дружелюбные, энергичные и преданные собаки. Они отлично подходят для семей с детьми и любят активный образ жизни.",
+                characteristics: ["Вес: 25-36 кг", "Рост: 55-62 см", "Продолжительность жизни: 10-12 лет"]
+            },
+            mainecoon: {
+                title: "Мейн-кун 😺",
+                image: "image/breed2.jpg",
+                description: "Мейн-куны — крупные, ласковые и общительные кошки с дружелюбным характером. Они хорошо ладят с другими животными.",
+                characteristics: ["Вес: 6-12 кг", "Рост: до 40 см", "Продолжительность жизни: 12-15 лет"]
+            },
+            chihuahua: {
+                title: "Чихуахуа 🐕",
+                image: "image/breed3.jpg",
+                description: "Чихуахуа — маленькие собаки с большим характером. Они преданные и любят быть в центре внимания.",
+                characteristics: ["Вес: 1-3 кг", "Рост: 15-23 см", "Продолжительность жизни: 12-20 лет"]
+            },
+            husky: {
+                title: "Сибирская хаски ❄️",
+                image: "image/breed6.jpg",
+                description: "Сибирские хаски — энергичные и выносливые собаки с яркой внешностью. Они идеальны для активных людей, любящих прогулки.",
+                characteristics: ["Вес: 20-27 кг", "Рост: 50-60 см", "Продолжительность жизни: 12-14 лет"]
+            },
+            britishcat: {
+                title: "Британская кошка 🐱",
+                image: "image/breed5.jpg",
+                description: "Британские кошки — спокойные и уравновешенные питомцы с плюшевой шерстью. Они любят комфорт и уют.",
+                characteristics: ["Вес: 4-8 кг", "Рост: до 30 см", "Продолжительность жизни: 12-16 лет"]
+            },
+            yorkshire: {
+                title: "Йоркширский терьер 🐩",
+                image: "image/breed4.jpg",
+                description: "Йоркширские терьеры — миниатюрные собаки с элегантной внешностью и ярким характером. Они обожают внимание.",
+                characteristics: ["Вес: 2-3 кг", "Рост: 20-23 см", "Продолжительность жизни: 13-16 лет"]
+            },
+            germanshepherd: {
+                title: "Немецкая овчарка 🐶",
+                image: "image/breed7.jpg",
+                description: "Смелая и умная собака, отличный защитник и компаньон.",
+                characteristics: ["Вес: 22-40 кг", "Рост: 55-65 см", "Продолжительность жизни: 9-13 лет"]
+            },
+            doberman: {
+                title: "Доберман 🐶",
+                image: "image/breed8.jpg",
+                description: "Элегантная и преданная собака с сильным характером.",
+                characteristics: ["Вес: 32-45 кг", "Рост: 61-72 см", "Продолжительность жизни: 10-12 лет"]
+            },
+            bulldog: {
+                title: "Бульдог 🐶",
+                image: "image/breed9.jpg",
+                description: "Добродушный и спокойный питомец, идеален для дома.",
+                characteristics: ["Вес: 20-25 кг", "Рост: 31-40 см", "Продолжительность жизни: 8-12 лет"]
+            }
+        };
+
+        document.querySelectorAll('[data-pet]').forEach(button => {
+            button.addEventListener('click', function () {
+                const petId = this.getAttribute('data-pet');
+                const pet = pets[petId];
+
+                document.getElementById('petModalLabel').textContent = pet.title;
+                document.getElementById('pet-image').src = pet.image;
+                document.getElementById('pet-description').textContent = pet.description;
+
+                const characteristicsList = document.getElementById('pet-characteristics');
+                characteristicsList.innerHTML = '';
+                pet.characteristics.forEach(char => {
+                    const li = document.createElement('li');
+                    li.textContent = char;
+                    characteristicsList.appendChild(li);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

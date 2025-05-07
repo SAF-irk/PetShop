@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.navbar-toggler-icon {
+    font-size: 1.25rem;
+}
+
+.navbar-collapse {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.banner {
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.banner .lead {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.banner .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.card {
+    position: relative;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-outline-primary {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.review-star {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 25px;
+    color: #ffd700;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.modal-body p {
+    font-size: 0.9rem;
+}
+
+.modal-body ul {
+    font-size: 0.9rem;
+}
+
+.info h2,
+.contacts h2 {
+    font-size: 1.5rem;
+}
+
+.info h4,
+.contacts h4 {
+    font-size: 1.25rem;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 2rem 1rem;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .banner .lead {
+        font-size: 1.25rem;
+    }
+
+    .banner .btn-lg {
+        font-size: 1.25rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .btn-primary,
+    .btn-outline-primary {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .review-star {
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .info h2,
+    .contacts h2 {
+        font-size: 1.75rem;
+    }
+
+    .info h4,
+    .contacts h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-collapse {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .banner {
+        padding: 4rem 2rem;
+    }
+
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner .lead {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top {
+        height: 200px;
+    }
+
+    .modal-body img {
+        max-height: 300px;
+    }
+
+    .modal-body p,
+    .modal-body ul {
+        font-size: 1rem;
+    }
+
+    .info h2,
+    .contacts h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 3rem 2rem;
+    }
+
+    footer h5 {
+        font-size: 1.5rem;
+    }
+
+    footer p,
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner .lead {
+        font-size: 1.75rem;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
